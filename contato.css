@@ -1,0 +1,150 @@
+/* =========================
+   RESET LOCAL
+========================= */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+/* =========================
+   BODY
+========================= */
+body{
+    background:#EDE3D4;
+    color:#4F4030;
+}
+
+/* =========================
+   HEADER
+========================= */
+header{
+    background:#5E4B3C;
+    color:#FFFDF9;
+    padding:25px;
+    text-align:center;
+    border-bottom:3px solid #A67C52;
+}
+
+header h1{
+    color:#D4A373;
+    margin-bottom:8px;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:25px;
+    margin-top:20px;
+}
+
+nav a{
+    color:#FFFDF9;
+    text-decoration:none;
+    font-weight:bold;
+    padding:8px 12px;
+    border-radius:6px;
+    transition:.3s;
+}
+
+nav a:hover{
+    background:#A67C52;
+}
+
+/* =========================
+   CONTATO CONTAINER
+========================= */
+.contato{
+    max-width:700px;
+    margin:60px auto;
+    background:white;
+    padding:40px;
+    border-radius:16px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    text-align:center;
+}
+
+.contato h2{
+    color:#A67C52;
+    margin-bottom:20px;
+    font-size:2rem;
+}
+
+.contato p{
+    margin:8px 0;
+    font-size:1rem;
+}
+
+/* =========================
+   FORMULÁRIO
+========================= */
+form{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+    margin-top:25px;
+}
+
+input,
+textarea{
+    padding:14px;
+    border:1px solid #D9C9B5;
+    border-radius:10px;
+    outline:none;
+    transition:.3s;
+    font-size:1rem;
+}
+
+input:focus,
+textarea:focus{
+    border-color:#A67C52;
+    box-shadow:0 0 10px rgba(166,124,82,.25);
+}
+
+/* BOTÃO */
+button{
+    background:#A67C52;
+    color:#FFFDF9;
+    padding:14px;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    font-weight:bold;
+    transition:.3s;
+}
+
+button:hover{
+    background:#B88A5A;
+    transform:translateY(-2px);
+}
+
+/* =========================
+   FOOTER
+========================= */
+footer{
+    background:#5E4B3C;
+    color:#FFFDF9;
+    text-align:center;
+    padding:25px;
+    margin-top:60px;
+    border-top:3px solid #A67C52;
+}
+
+/* =========================
+   RESPONSIVO
+========================= */
+@media(max-width:768px){
+
+    .contato{
+        margin:30px 15px;
+        padding:25px;
+    }
+
+    nav ul{
+        flex-direction:column;
+        gap:12px;
+    }
+}
